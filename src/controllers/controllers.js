@@ -1,4 +1,4 @@
-const router = require("../routes/routes");
+const router = require("../routes/index.routes");
 
 const indexCtrl = {};
 

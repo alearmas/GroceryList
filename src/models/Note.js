@@ -13,4 +13,4 @@ const NoteSchema = new Schema({
     timestamps: true
 })
 
-moodule.exports = model('Note', NoteSchema);
+module.exports = model('Note', NoteSchema);
