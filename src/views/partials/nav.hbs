@@ -1,14 +1,18 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="/">Shopping List</a>
+    <a class="nav-link" href="/about">About</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        {{#if user}}
         <div class="navbar-nav">
             <a class="nav-link" href="/notes">Notes</a>
             <a class="nav-link" href="/notes/add">Add note</a>
+            <a class="nav-link" href="/logout">Logout</a>
         </div>
+        {{else}}
         <div class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a href="/signin" class="nav-link">Login</a>
@@ -17,5 +21,6 @@
                 <a href="/signup" class="nav-link">Register</a>
             </li>
         </div>
+        {{/if}}
     </div>
 </nav>
